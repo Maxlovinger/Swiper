@@ -5,13 +5,19 @@
   "description": "Your AI-powered dating assistant for Tinder.",
   "permissions": [
     "storage",
-    "scripting"
+    "scripting",
+    "webRequest",
+    "debugger"
   ],
   "host_permissions": [
-    "https://tinder.com/*"
+    "https://tinder.com/*",
+    "https://api.gotinder.com/*"
   ],
   "action": {
     "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "assets/background.js"
   },
   "content_scripts": [
     {
