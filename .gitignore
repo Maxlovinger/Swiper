@@ -17,3 +17,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Scraper logs and dependencies
+puppeteer-scraper/node_modules
+tinder.txt
+new_tinder_page.txt

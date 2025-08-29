@@ -1,10 +1,11 @@
 {
   "manifest_version": 3,
   "name": "IntelliSwipe Advisor",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Your AI-powered dating assistant for Tinder.",
   "permissions": [
-    "storage"
+    "storage",
+    "scripting"
   ],
   "host_permissions": [
     "https://tinder.com/*"
@@ -15,7 +16,8 @@
   "content_scripts": [
     {
       "matches": ["https://tinder.com/*"],
-      "js": ["assets/content.js"]
+      "js": ["assets/content.js"],
+      "run_at": "document_idle"
     }
   ]
 }
